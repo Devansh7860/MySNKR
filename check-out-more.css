@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vh;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.176);
+    background: linear-gradient(103.59deg, rgba(49, 158, 216, 0.9) 9.44%, rgba(134, 196, 221, 0.865) 57.45%, rgba(103, 192, 220, 0.15) 99.69%, rgba(165, 233, 255, 0) 101.61%);
+
+}
+nav .logo{
+    margin-left: 60px;
+}
+nav .links{
+    width: 50%;
+    padding: 10px;
+    margin: 5px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgba(255, 255, 255, 0.69);
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.more-shoes{
+    display: grid;
+    grid-gap: 4px;
+    padding-top: 20px;
+    height: 900px;
+    width: 90%;
+    max-width: 1500px;
+    margin: 50px auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(3 , 4fr);
+}
+.more-shoes .items{
+    background-color: #d1d1d13a;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 4px;
+}
+.more-shoes .items .sub-items{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #f4f2f2;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.i3 img{
+    height: 170px;
+    width: 190px;
+    margin: auto 15px;    
+}
+.more-shoes  .items .sub-items h3{
+    font-size: large;
+    font-family: sans-serif;
+}
+.more-shoes  .items .sub-items h4{
+    font-size: medium;
+    margin-bottom: -50px;
+    color: rgb(80, 205, 155);
+    font-family: sans-serif;
+}
+.more-shoes .items .sub-items button{
+    font-family: sans-serif;
+    position: relative;
+    bottom: -20px;
+    cursor: pointer;
+    right: -20px;
+    background-color: #e2e1e4;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}

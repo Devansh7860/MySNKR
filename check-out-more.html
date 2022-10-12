@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySNKR</title>
+    <link rel="stylesheet" href="check-out-more.css">
+    <script type="module" src="data.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.png" width="85" height="90" alt="">
+        </div>
+        <div class="links">
+            <span>HOME</span>
+            <span>SHOP</span>
+            <span>CATEGORY</span>
+            <span><a href="cart.html"><img src="assets/cart.png" height="40" width="40" alt=""></a></span>
+        </div>
+    </nav>
+
+
+    <div class="more-shoes">
+        <div class="items i3">
+            <img src="" alt="">
+            <div class="sub-items">
+                <h3>Name</h3>
+                <h4>$130</h4>
+                <button>Cart</button>
+            </div>
+        </div>
+        <div class="items i3">
+            <img src="" alt="">
+            <div class="sub-items">
+                <h3>Name</h3>
+                <h4>$130</h4>
+                <button>Cart</button>
+            </div>
+        </div>
+        <div class="items i3">
+            <img src="" alt="">
+            <div class="sub-items">
+                <h3>Name</h3>
+                <h4>$130</h4>
+                <button>Cart</button>
+            </div>
+        </div>
+        <div class="items i3">
+            <img src="" alt="">
+            <div class="sub-items">
+                <h3>Name</h3>
+                <h4>$130</h4>
+                <button>Cart</button>
+            </div>
+        </div>
+        <div class="items i3">
+            <img src="" alt="">
+            <div class="sub-items">
+                <h3>Name</h3>
+                <h4>$130</h4>
+                <button>Cart</button>
+            </div>
+        </div>
+        <div class="items i3">
+            <img src="" alt="">
+            <div class="sub-items">
+                <h3>Name</h3>
+                <h4>$130</h4>
+                <button>Cart</button>
+            </div>
+        </div>
+        <div class="items i3">
+            <img src="" alt="">
+            <div class="sub-items">
+                <h3>Name</h3>
+                <h4>$130</h4>
+                <button>Cart</button>
+            </div>
+        </div>
+        <div class="items i3">
+            <img src="" alt="">
+            <div class="sub-items">
+                <h3>Name</h3>
+                <h4>$130</h4>
+                <button>Cart</button>
+            </div>
+        </div>
+        <div class="items i3">
+            <img src="" alt="">
+            <div class="sub-items">
+                <h3>Name</h3>
+                <h4>$130</h4>
+                <button>Cart</button>
+            </div>
+        </div>
+        <div class="items i3">
+            <img src="" alt="">
+            <div class="sub-items">
+                <h3>Name</h3>
+                <h4>$130</h4>
+                <button>Cart</button>
+            </div>
+        </div>
+        <div class="items i3">
+            <img src="" alt="">
+            <div class="sub-items">
+                <h3>Name</h3>
+                <h4>$130</h4>
+                <button>Cart</button>
+            </div>
+        </div>
+        <div class="items i3">
+            <img src="" alt="">
+            <div class="sub-items">
+                <h3>Name</h3>
+                <h4>$130</h4>
+                <button>Cart</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script type="module">
+        import { data } from './data.js'
+        let i3 = document.getElementsByClassName('i3')
+
+        function clicked(event) {
+            if (event.target.innerText == 'Cart') {
+                let parent = event.target.parentElement.parentElement
+                let productInfo = []
+                productInfo.push(parent.children[0].src)
+                productInfo.push(parent.children[1].children[0].innerText)
+                window.location.href = 'cart.html'
+            }
+        }
+        for (let i = 14; i < (i3.length + 14); i++) {
+            i3[i - 14].getElementsByTagName('h3')[0].textContent = `${Object.entries(data)[i][1].name}`;
+            i3[i - 14].children[0].attributes[0].value = `${Object.entries(data)[i][1].img}`;
+            i3[i - 14].children[1].children[2].addEventListener('click', clicked)
+
+        }
+
+
+    </script>
+</body>
+
+</html>
