@@ -488,7 +488,7 @@ main{
     }
   }
 @media only screen and (max-width: 450px) {
-  html {
-    zoom: 0.3;
-  }
+    html {
+        zoom: 0.3;
+    }
   }
